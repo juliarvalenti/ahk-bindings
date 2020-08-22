@@ -1,0 +1,27 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log($1);"]
+  },
+  "Test Template": {
+    "prefix": "enztest",
+    "body": [
+      "import React from 'react'",
+      "",
+      "import Enzyme, { shallow } from 'enzyme'",
+      "import Adapter from 'enzyme-adapter-react-16'",
+      "",
+      "import { $1 } from './$1'",
+      "",
+      "Enzyme.configure({ adapter: new Adapter() })",
+      "const minimumProps = {}",
+      "",
+      "describe('<$1 />', () => {",
+      "\tit('renders with minimum props without crashing', () => {",
+      "\t\tconst wrapper = shallow(<$1 {...minimumProps} />)",
+      "\t\texpect(wrapper).toHaveLength(1)",
+      "\t})",
+      "})"
+    ]
+  }
+}
