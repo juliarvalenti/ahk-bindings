@@ -52,3 +52,6 @@
 !k::SendInput {Down 1}
 !i::SendInput {Up 1}
 !l::SendInput {Right 1}
+
+; Window always on top
+!+^n:: Winset, Alwaysontop, , A
