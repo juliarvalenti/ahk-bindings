@@ -1,106 +1,105 @@
 {
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "newUntitledFile",
   "editor.wordWrap": "off",
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "editor.parameterHints.enabled": false,
-  "editor.formatOnType": true,
-  "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.autoClosingBrackets": "beforeWhitespace",
-  "editor.cursorStyle": "block-outline",
-  "editor.rulers": [100],
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "editor.trimAutoWhitespace": true,
-  "files.associations": {
-    "*.docker": "dockerfile",
-    "*.jenkins": "groovy"
-  },
-  "python.pythonPath": "C:\\Python3.7.5\\python.exe",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "eslint.workingDirectories": ["./web/src"],
-  "eslint.options": {
-    "configFile": "../.eslintrc.json"
-  },
-  "eslint.nodePath": "C:\\Git\\mayhemdb\\web\\node_modules",
-  "eslint.alwaysShowStatus": true,
-
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 18,
-  "editor.fontLigatures": true,
-  "explorer.decorations.badges": false,
-  "git.ignoreMissingGitWarning": true,
-  "git.path": "C:\\Users\\julia\\AppData\\Local\\GitHubDesktop\\app-1.6.6\\resources\\app\\git\\mingw64\\bin\\git.exe",
-  "liveSassCompile.settings.generateMap": false,
-  "liveSassCompile.settings.formats": [
-    {
-      "extensionName": ".css",
-      "savePath": null
-    }
+  "git.path": [
+    "/usr/bin/git"
   ],
-  "liveSassCompile.settings.autoprefix": [
-    "> 15%",
-    "last 5 Chrome versions",
-    "last 5 ChromeAndroid versions",
-    "last 5 Android versions",
-    "last 5 Firefox versions",
-    "last 5 FirefoxAndroid versions",
-    "last 5 iOS versions",
-    "last 5 Edge versions",
-    "last 5 Explorer versions"
-  ],
-  "breadcrumbs.enabled": true,
-  "window.zoomLevel": -2,
-  "jestrunner.jestPath": "${workspaceFolder}/web/node_modules/jest/bin/jest.js",
-  "jestrunner.configPath": "/web/jest.config.js",
-  "workbench.colorTheme": "NetBeans Light Theme",
-  "window.menuBarVisibility": "default",
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "[javascript]": {
+  "editor.formatOnSave": true,
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
-  "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
-  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
-  "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
-  "workbench.startupEditor": "none",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.tabSize": 2,
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "\"Fira Code\", Menlo, Monaco, 'Courier New', monospace",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-  "files.autoSave": "off",
-  "bracketPairColorizer.consecutivePairColors": ["()", "[]", "{}", ["RoyalBlue", "Orchid", "DarkOliveGreen"], "Red"],
-  "prettier.printWidth": 150,
-  "editor.formatOnPaste": true,
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "C:\\Python3.7.5\\Scripts\\black.exe",
-  "python.linting.pycodestylePath": "C:\\Python3.7.5\\Scripts\\pycodestyle.exe",
-  "python.linting.flake8Path": "C:\\Python3.7.5\\Scripts\\flake8",
-  "yaml.schemas": {
-    "file:///c%3A/Users/julia/.vscode/extensions/atlassian.atlascode-2.7.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "atlascode.jira.jqlList": [
-    {
-      "id": "01fcbc39-12d0-4941-846a-ba3b1b787bb2",
-      "enabled": true,
-      "name": "My forallsecure Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "2b3b51fd-9344-422f-a8e1-f6702d8e689f",
-      "monitor": true
-    }
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.options": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.rulers": [
+    150
   ],
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "2b3b51fd-9344-422f-a8e1-f6702d8e689f",
-    "projectKey": "DIUX"
+  "go.toolsManagement.autoUpdate": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "javascript"
   },
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 10,
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "rewrap.wrappingColumn": 120,
-  "python.formatting.blackArgs": ["--config C:\\git\\mayhemdb\\api\\pyproject.toml"],
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "search.followSymlinks": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+  },
+  "editor.guides.bracketPairs": false,
+  "editor.inlineSuggest.enabled": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreMissingGitWarning": true,
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.inlayHints.enabled": false,
+  "workbench.sideBar.location": "right",
+  "extensions.ignoreRecommendations": true,
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ]
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
+    "typescript": true,
+    "javascript": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "indenticator.color.light": "#cccccc",
+  "indenticator.color.dark": "#cccccc",
+  "indenticator.inner.color.light": "#dddddd",
+  "workbench.editor.empty.hint": "hidden",
+  "rapidapi.terminalLink.enabled": false,
+  "workbench.colorTheme": "NetBeans Light Theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.letterSpacing": 1,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.model": "anthropic:claude-3-5-sonnet-latest"
 }
